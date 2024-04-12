@@ -23,6 +23,13 @@
       "components": [
         "layout.hero-section"
       ]
+    },
+    "logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
