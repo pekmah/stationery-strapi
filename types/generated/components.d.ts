@@ -25,11 +25,25 @@ export interface LayoutHeroSection extends Schema.Component {
   };
 }
 
+export interface LayoutService extends Schema.Component {
+  collectionName: 'components_layout_services';
+  info: {
+    displayName: 'service';
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    body: Attribute.Text;
+    link: Attribute.Component<'components.link'>;
+    image: Attribute.Media;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'components.link': ComponentsLink;
       'layout.hero-section': LayoutHeroSection;
+      'layout.service': LayoutService;
     }
   }
 }

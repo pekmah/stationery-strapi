@@ -25,11 +25,18 @@
       ]
     },
     "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "services": {
+      "type": "dynamiczone",
+      "components": [
+        "layout.service"
+      ]
     }
   }
 }
