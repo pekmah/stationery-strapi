@@ -12,6 +12,14 @@ export interface ComponentsLink extends Schema.Component {
   };
 }
 
+export interface ComponentsNav extends Schema.Component {
+  collectionName: 'components_components_navs';
+  info: {
+    displayName: 'nav';
+  };
+  attributes: {};
+}
+
 export interface LayoutHeroSection extends Schema.Component {
   collectionName: 'components_layout_hero_sections';
   info: {
@@ -42,6 +50,7 @@ declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'components.link': ComponentsLink;
+      'components.nav': ComponentsNav;
       'layout.hero-section': LayoutHeroSection;
       'layout.service': LayoutService;
     }
