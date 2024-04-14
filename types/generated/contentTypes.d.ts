@@ -891,7 +891,8 @@ export interface ApiProductProduct extends Schema.CollectionType {
   info: {
     singularName: 'product';
     pluralName: 'products';
-    displayName: 'product';
+    displayName: 'products';
+    description: '';
   };
   options: {
     draftAndPublish: true;
