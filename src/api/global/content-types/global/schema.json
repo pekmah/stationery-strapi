@@ -4,7 +4,8 @@
   "info": {
     "singularName": "global",
     "pluralName": "globals",
-    "displayName": "global"
+    "displayName": "global",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,6 +17,12 @@
     },
     "description": {
       "type": "text"
+    },
+    "contacts": {
+      "displayName": "contacts",
+      "type": "component",
+      "repeatable": false,
+      "component": "configs.contacts"
     }
   }
 }

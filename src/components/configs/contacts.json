@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_configs_contacts",
+  "info": {
+    "displayName": "contacts"
+  },
+  "options": {},
+  "attributes": {
+    "email": {
+      "type": "string"
+    },
+    "whatsapp_number": {
+      "type": "string"
+    }
+  }
+}

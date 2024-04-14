@@ -20,6 +20,17 @@ export interface ComponentsNav extends Schema.Component {
   attributes: {};
 }
 
+export interface ConfigsContacts extends Schema.Component {
+  collectionName: 'components_configs_contacts';
+  info: {
+    displayName: 'contacts';
+  };
+  attributes: {
+    email: Attribute.String;
+    whatsapp_number: Attribute.String;
+  };
+}
+
 export interface LayoutHeroSection extends Schema.Component {
   collectionName: 'components_layout_hero_sections';
   info: {
@@ -51,6 +62,7 @@ declare module '@strapi/types' {
     export interface Components {
       'components.link': ComponentsLink;
       'components.nav': ComponentsNav;
+      'configs.contacts': ConfigsContacts;
       'layout.hero-section': LayoutHeroSection;
       'layout.service': LayoutService;
     }
