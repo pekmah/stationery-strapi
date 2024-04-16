@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_components_phones",
+  "info": {
+    "displayName": "Phone"
+  },
+  "options": {},
+  "attributes": {
+    "phone_number": {
+      "type": "string"
+    }
+  }
+}

@@ -835,6 +835,7 @@ export interface ApiGlobalGlobal extends Schema.SingleType {
     title: Attribute.String;
     description: Attribute.Text;
     contacts: Attribute.Component<'configs.contacts'>;
+    phone_numbers: Attribute.DynamicZone<['components.phone']>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

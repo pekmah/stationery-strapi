@@ -20,6 +20,16 @@ export interface ComponentsNav extends Schema.Component {
   attributes: {};
 }
 
+export interface ComponentsPhone extends Schema.Component {
+  collectionName: 'components_components_phones';
+  info: {
+    displayName: 'Phone';
+  };
+  attributes: {
+    phone_number: Attribute.String;
+  };
+}
+
 export interface ConfigsContacts extends Schema.Component {
   collectionName: 'components_configs_contacts';
   info: {
@@ -62,6 +72,7 @@ declare module '@strapi/types' {
     export interface Components {
       'components.link': ComponentsLink;
       'components.nav': ComponentsNav;
+      'components.phone': ComponentsPhone;
       'configs.contacts': ConfigsContacts;
       'layout.hero-section': LayoutHeroSection;
       'layout.service': LayoutService;
